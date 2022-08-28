@@ -10,11 +10,12 @@
 
 <body>
   <div class="flex justify-between m-6">
-    <div class=""><img class="h-10 w-32"
+    <div class="">
+      <img class="h-10 w-32"
         src="https://res.cloudinary.com/grubhub-assets/image/upload/v1626378102/Citrus-assets/GH%20Branded/Web%20%28Umami%29/Logos/Top%20Navigation/logo-full-primary.svg">
     </div>
     <div>
-      <button class="bg-white text-blue-500 font-bold border border-solid rounded-2xl pt-2 pl-4 pr-4 pb-2 ">Sign
+      <button class="text-white font-bold  p-3 bg-blue-500 rounded hover:bg-blue-600">Sign
         in</button>
     </div>
   </div>
@@ -23,18 +24,17 @@
   <div class="pt-12 flex items-center h-96 justify-center relative overflow-hidden bg-no-repeat bg-cover"
     style="background-image: url('https://res.cloudinary.com/grubhub-marketing/image/upload/f_auto,fl_lossy,q_80,b_rgb:000,o_60/v1454094376/grubhubHomePage/hero_default.jpg');">
 
-
     <div class="absolute flex items-center justify-center w-full ">
 
-      <div>
+      <div class="">
         <div class="text-white">
           <h1 class="font-bold text-4xl mb-6 ">Finding all Soul Food restaurant that deliver to you.</h1>
-          <h3 class="font-bold  text-xl mb-6">Who delivers?</h3>
-          <h5 class="font-bold text-sm mb-6">Enter your address bellow.</h5>
+          <h4 class="font-bold  text-xl mb-6">Who delivers?</h4>
+          <h6 class="font-bold text-sm mb-6">Enter your address below.</h6>
           <div class="w-full flex space-between pt-4">
             <div class="w-5/6">
               <div class=" bg-white flex border rounded">
-                <!-- -->
+                <!-- Start: map svg -->
                 <div class="p-3">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-blue-500" viewBox="0 0 20 20"
                     fill="currentColor" height="100%" width="100%">
@@ -43,11 +43,65 @@
                       clip-rule="evenodd" />
                   </svg>
                 </div>
-              </div>
+                <!-- End: svg map -->
 
-              <sript sr="node modules/preline/dist/hs-ui.bundle-js">
-                </script>
-                <script src="app.js"></script>
+                <!-- Start: input search -->
+                <div class="w-full p-3">
+                  <input id="searchfield"
+                    class="outline-none w-full bg-white text-gray-500 text-base font-normal border-b-0" type="text"
+                    placeholder="Street address or zip code">
+                </div>
+                <!-- End: input search -->
+
+                <!-- Start: close svg -->
+                <div class="p-3">
+                  <a href="#" id="closebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" viewBox="0 0 20 20"
+                      fill="currentColor" height="100%" width="100%">
+                      <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                <!-- End: close svg -->
+              </div>
+              <!-- start my result section -->
+              <div id="resultWrapper"
+                class="py-2 px-2 text-black bg-white rounded-b-lg border-t-0 border space-y-6 hover:bg-gray-200 hidden ">
+                <ul id="results" class="divide-y divide-slate-200 outline-none ">
+
+                </ul>
+              </div>
+              <!-- End my result section -->
+            </div>
+
+            <!-- Start: button -->
+            <div class="w-1/6 pl-2">
+              <div class="">
+                <button class="text-white font-bold  p-3 bg-blue-500 rounded hover:bg-blue-600">Find food</button>
+              </div>
+            </div>
+            <!-- End: button -->
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+
 </body>
 
 </html>

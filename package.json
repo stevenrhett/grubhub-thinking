@@ -5,5 +5,22 @@
   "dependencies": {
     "daisyui": "^2.24.0",
     "preline": "^1.1.2"
-  }
+  },
+  "name": "grubhub-thinking",
+  "description": "Ref: https://www.grubhub.com/delivery/cuisine/soul_food Prerequisite reading Objects and Arrays Key steps 1. Create a new GitHub project called grubhub-thinking 2. Go to the \"issues\" section and add all the item below to your todos",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenrhett/grubhub-thinking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenrhett/grubhub-thinking/issues"
+  },
+  "homepage": "https://github.com/stevenrhett/grubhub-thinking#readme"
 }
